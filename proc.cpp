@@ -36,7 +36,7 @@ uintptr_t GetModuleBaseAddress(DWORD procId, const wchar_t* modName)
 	{
 		MODULEENTRY32 modEntry;
 		modEntry.dwSize = sizeof(modEntry);
-		if (Module32First(hSnap, &modEntry))
+		if (Module32First(hSnap, &modEntry))	
 		{
 			do 
 			{
